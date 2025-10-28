@@ -1,6 +1,6 @@
 <template>
   <h1>Numeros Padre</h1>
-  <h2>La suma es {{ sumaTotal }}</h2>
+  <h2 style="color:red">La suma es {{ sumaTotal }}</h2>
   <button @click="GenerarNumeroAleatorio">Nuevo Número</button>
 
   <ul>
