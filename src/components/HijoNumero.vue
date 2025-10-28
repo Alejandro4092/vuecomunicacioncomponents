@@ -12,7 +12,7 @@ export default {
     },methods:{
         sumarNumero(){
             console.log("Sumando numero")
-            this.$emit("sumar", this.numero)
+            this.$emit("sumarNumero", this.numero)
             
 
         }

@@ -4,7 +4,7 @@
   <button @click="GenerarNumeroAleatorio">Nuevo Número</button>
 
   <ul>
-  <li v-for="numbers in numeros" :key="numbers"><HijoNumero :numero="numbers" v-on:sumar="sumarNumero"/></li>
+  <li v-for="numbers in numeros" :key="numbers"><HijoNumero :numero="numbers" v-on:sumarNumero="sumarNumero"/></li>
   </ul>
 </template>
 
@@ -27,10 +27,10 @@ data(){
     var numeroAleatorio=Math.floor(Math.random()*100)+1;
     this.numeros.push(numeroAleatorio)
 },
-sumarNumero(Numero){
-  console.log("Soy el padre y voy a sumar "+Numero)
+sumarNumero(numero){
+  console.log("Soy el padre y voy a sumar "+numero)
 
-  this.sumaTotal += Numero
+  this.sumaTotal += numero
 }
 }
 }
