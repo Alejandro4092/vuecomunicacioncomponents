@@ -1,16 +1,30 @@
 <template>
-  <PadreNumeros/>
+  
+  <SumaCheckbox/>
+ 
 </template>
 
 <script>
-import PadreNumeros from './components/PadreNumeros.vue'
+
+//import PadreNumeros from './components/PadreNumeros.vue'
 //import PadreDeportes from './components/PadreDeportes.vue';
+//import ComicsComponent from './components/ComicsComponent.vue'
+// import SeleccionMultiple from './components/SeleccionMultiple.vue'
+import SumaCheckbox from './components/SumaCheckbox.vue'
+
+
 
 export default {
   name: 'App',
   components: {
-  //  PadreDeportes,
-  PadreNumeros
+    SumaCheckbox
+    // SeleccionMultiple,
+   // ComicsComponent,
+   // PadreDeportes,
+   // PadreNumeros,
+  
+    
+
   }
 }
 </script>

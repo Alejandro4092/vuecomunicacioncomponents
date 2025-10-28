@@ -4,7 +4,9 @@
   <button @click="GenerarNumeroAleatorio">Nuevo Número</button>
 
   <ul>
-  <li v-for="numbers in numeros" :key="numbers"><HijoNumero :numero="numbers" v-on:sumarNumero="sumarNumero"/></li>
+    <li v-for="(numbers, idx) in numeros" :key="numbers + '-' + idx">
+      <HijoNumero :numero="numbers" v-on:sumar="sumarNumero"/>
+    </li>
   </ul>
 </template>
 
