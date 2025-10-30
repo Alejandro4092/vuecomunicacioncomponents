@@ -3,6 +3,7 @@ import PadreDeportes from "./components/PadreDeportes.vue";
 import ComicsComponent from "./components/ComicsComponent.vue";
 import PadreNumeros from "./components/PadreNumeros.vue";
 import NumeroDoble from "./components/NumeroDoble.vue"
+import TablaMultiplicar from './components/TablaMultiplicar.vue'
 //Parametros como en react /comics/:id y 
 // para metro opcional siempre de ultimo lugar /comics/:id?
 const myRoutes=[
@@ -18,6 +19,9 @@ const myRoutes=[
     {
         path:"/numerodoble/:numero?",component:NumeroDoble
     },
+    {
+        path:"/tablamultiplicar/:numero?",component:TablaMultiplicar
+    }
   
 ]
 const router=createRouter({
