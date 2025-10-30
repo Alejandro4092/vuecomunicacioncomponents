@@ -1,6 +1,7 @@
 <template>
   
-  <SumaCheckbox/>
+  <MenuComponent/>
+  <router-view></router-view>
  
 </template>
 
@@ -10,14 +11,16 @@
 //import PadreDeportes from './components/PadreDeportes.vue';
 //import ComicsComponent from './components/ComicsComponent.vue'
 // import SeleccionMultiple from './components/SeleccionMultiple.vue'
-import SumaCheckbox from './components/SumaCheckbox.vue'
+// import SumaCheckbox from './components/SumaCheckbox.vue'
+import MenuComponent from './components/MenuComponent.vue'
 
 
 
 export default {
   name: 'App',
   components: {
-    SumaCheckbox
+    MenuComponent
+    // SumaCheckbox
     // SeleccionMultiple,
    // ComicsComponent,
    // PadreDeportes,
